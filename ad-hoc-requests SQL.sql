@@ -10,11 +10,6 @@ where f.base_price >500 and f.promo_type = "BOGOF";
 
 
 
-
-
-
-
-
 -- (Ad_Hoc.Q3.) ----> ----> -- > ----> ----> -- > ----> ----> -- > ----> ----> -- > ----> ---->
 select c.campaign_name , concat(round((sum(f.base_price * f.`quantity_sold(before_promo)`)/1000000),2)," M") revenue_before_promo , 
 concat(round((sum(f.base_price * f.`quantity_sold(after_promo)`)/1000000),2)," M") revenue_after_promo
@@ -29,9 +24,6 @@ order by  revenue_after_promo desc;
 
 
 
-
-
-
  -- > (Ad_Hoc.Q2.)----> ----> -- > ----> ----> -- > ----> ----> -- > ----> ----> -- > ----> ---->
 select   city , count(store_id) as count_store
 from dim_stores 
@@ -40,11 +32,6 @@ from dim_stores
  
  
  -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- --
-
-
-
- 
- 
  
  
  
@@ -66,8 +53,6 @@ group by   p.category
 order by p.category desc;
 
  -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- --
-
-
 
 
 
