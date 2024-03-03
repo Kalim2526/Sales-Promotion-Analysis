@@ -12,7 +12,7 @@ AtliQ Mart's 50 supermarkets had big promotions during Diwali 2023 and Sankranti
 
 ### 1. Store Performance Analysis:
 
-Store STCHE-4 did really well, but Store STMLR-0 needs some improvements.
+• Store STCHE-4 did really well, but Store STMLR-0 needs some improvements.
 
 Bengaluru, Chennai, and Hyderabad had really good sales, showing how people buy differently in different places.
 
